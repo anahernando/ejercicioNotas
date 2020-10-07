@@ -1,0 +1,59 @@
+ +++  GIT ++++
+Git es un software de control de versiones (para registrar el historial de cambios de un 
+proyecto) que ayuda a la hora de trabajar en equipo.
+Es una herramienta que apoya la tarea colaborativa pero tambien para tener un registro 
+del avance, los cambios, y sobre todo las adiciones que se van incorporando al código
+cuando se trabaja de una manera incremental.
+Es asi que a medida que se avanza en un proyecto se van lanzando diferentes "versiones".
+Sabemos que cada release significa que lo nuevo reemplaza a lo anterior.
+Git nos ayuda a controlar esas versiones, compartirlas y es muy util para trabajar 
+en proyectos de gran tamaño.
+
+REPOSITORIO: es un proyecto que podemos seguir con Git.
+
+COMMIT: se llama asi a cada cambio que se registra en la historia del repositorio.
+Los desarrolladores que hayan hecho cambios al código en el proyecto (cambios en interface,
+una nueva funcionalidad, correcciones de bugs); son quienes cargan los commits en git para 
+registrar que se ha realizado un cambio o una adición.
+Los cambios no se cargan automáticamente en un repositorio. Hay que mandar esos cambios 
+manualmente. Hay una etapa previa que se llama Stagin Area para ir pre-cargando los cambios 
+(comando git add), los ponemos en espera en esa área como si fuera una sala de espera
+hasta que se suben finalmente (comando git commit).
+
+BRANCH = rama o bifurcación: son los caminos alternativos que puede presentar un proyecto.
+La rama troncal se llama MASTER y es el proyecto principal que luego se va a llevar a 
+Producción.
+Todo en GIT se trabaja con branches (bifurcando desde el master en nuevas ramas aquellas
+ caracteristicas o funcionalidades que se quieran modificar o agregar). En esas branches 
+se trabaja aisladamente... es como si fuera una copia del código que se trabaja por separado 
+del Master para trabajar con mas seguridad sin cambiar lo que en el master se encuentra.
+Si hay algun error en un Branch, nada en el MASTER se va a romper ni se va a perder.
+Si el trabajo en el Branch es exitoso y se quiere agregar al MASTER, se puede unificar esa 
+rama creada con el Master (que es el Branch troncal); o bien, es posible también eliminar 
+el branch si no se quiere seguir trabajando en eso.
+No hay que confundir branch con FORK, que en este caso se trata de proyectos paralelos que 
+parten del Master, pero que toman diferentes caminos a partir de alli.
+
+CLONE: Una funcionalidad de muchisima utilidad para trabajo colaborativo. 
+Un desarrollador crea el código y lo puede COMPARTIR con la ayuda de GIT.
+Clone permite clonar (es decir, copiar) un repositorio para que otro u otros desarrolladores 
+o colaboradores del equipo puedan acceder al mismo desde su equipo local - por eso se dice que
+GIT es distribuido (no requiere servidor central, cada usuario trabaja con una copia del proyecto
+lo que es bueno porque se hace un backup del proyecto).
+
+MERGE= fusionar o integrar un branch a la rama principal (master): Una vez que el desarrollador
+termina de trabajar en lo que va a adicionar al sistema, cambiar o de crear nuevas features,
+es necesario "mergear" para integrar ese trabajo que se hizo por separado al Master.
+Al realizar el merge pueden aparecer errores - lo que es importante saber para nuestro trabajo 
+como testers.
+ 
+
++++ GIT HUB +++
+GitHub es un sitio "social coding". 
+Permite subir repositorios de código para almacenarlo en el sistema de control de versiones GIT.
+Podemos guardar repositorios, administrarlos y compartirlos con todo el mundo. Por eso apoya el trabajo
+colaborativo y toma la definicion de "desarrollo social - social coding", porque facilita el trabajo
+entre varias partes involucradas en un proyecto.
+
+
+
